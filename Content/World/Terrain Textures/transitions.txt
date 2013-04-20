@@ -1,0 +1,23 @@
+main map:
+
+forest ground - grass
+grass - forest
+dead grass - grass
+grass - dead grass
+rock - dead grass
+rock - grass
+dead grass - rock
+scorched earth - grass
+grass - rock
+grass - scorched earth
+
+
+
+cave:
+rock - red dirt
+red dirt - rock
+
+rock - dirt
+red dirt - dirt
+dirt - rock
+dirt - red dirt

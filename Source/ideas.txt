@@ -1,0 +1,32 @@
+============================================================================
+
+warriors:
+- earthquake (aoe w slash animation)
+- stampede (attack run through ppl that does damage)
+- slash (projectile from weapon)
+
+robur does nothing
+
+spear attacks are not correct
+
+magic damage buff-type is not used
+
+can't see props of own items in trade window
+
+geonan head has a seam that needs fixing
+
+casting spell anim should not affect legs (or should make them idle)
+
+add todo() and confirm() **everywhere** for stability
+
+IDEA : PORTAL SCROLLS THAT TAKE YOU TO A RANDOM PLACE!!!
+
+casting monsters need to run up and attack between casts
+
+make dragon guardians able to fly over pit
+
+when wading, you don't move to where you click.
+
+swimming idle -> animation?
+
+wading animations are not used (they are just walking anims)

@@ -1,0 +1,349 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource."
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+1001 DIALOGEX 6, 18, 294, 389
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTEXTHELP | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Project Volucris"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LISTBOX         ID_RESOURCES,0,0,232,176,LBS_OWNERDRAWFIXED | LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+END
+
+1002 DIALOGEX 6, 18, 254, 70
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_CONTEXTHELP | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Text"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "OK",IDOK,140,48,45,15
+    PUSHBUTTON      "Cancel",IDCANCEL,200,48,45,15
+    EDITTEXT        ID_LINETEXT,8,32,236,12,ES_AUTOHSCROLL
+    LTEXT           "Text",ID_PROMPT,8,8,236,20
+END
+
+1003 DIALOGEX 6, 18, 250, 190
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTEXTHELP | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Select Resource"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LISTBOX         ID_RESOURCE_MULTI,0,0,200,148,LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | LBS_DISABLENOSCROLL | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         ID_RESOURCE_SINGLE,0,0,112,72,LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_D3DWIDESCREENDLG DIALOGEX 0, 0, 378, 180
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CAPTION | WS_SYSMENU
+CAPTION "Direct3D Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_ATLAS_TOOLBOX DIALOGEX 0, 0, 183, 374
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Toolbox"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TABS,"SysTabControl32",TCS_MULTILINE | WS_TABSTOP,7,7,169,278
+    CONTROL         "Wireframe",IDC_CHECK_WIREFRAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,112,337,49,10
+    CONTROL         "Scenery",IDC_CHECK_SCENERY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,323,49,10
+    GROUPBOX        "Display Options",IDC_STATIC,7,308,169,59
+    CONTROL         "Navigability",IDC_CHECK_NAVIGABILITY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,112,353,49,10
+    CONTROL         "Terrain - 1",IDC_CHECK_TERRAIN1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,338,49,10
+    PUSHBUTTON      "Apply",IDC_BUTTON_APPLYSPECIFIC,117,289,50,14
+    LISTBOX         IDC_LISTBOX,17,64,149,212,LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Overwrite",IDC_CHECK_OVERWRITE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,122,49,45,10
+    CONTROL         "Terrain - 2",IDC_CHECK_TERRAIN2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,353,49,10
+END
+
+IDD_GENERATESCENERY DIALOGEX 0, 0, 262, 329
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Generate Scenery"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,149,308,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,205,308,50,14
+    EDITTEXT        IDC_EDIT_TRA_MINX,39,63,45,14,ES_AUTOHSCROLL
+    GROUPBOX        "Translation (1.0 = 1 square)",IDC_STATIC,7,42,248,80
+    LTEXT           "X",IDC_STATIC,11,63,21,14,SS_CENTERIMAGE,WS_EX_RIGHT
+    LTEXT           "Y",IDC_STATIC,11,81,21,14,SS_CENTERIMAGE,WS_EX_RIGHT
+    LTEXT           "Z",IDC_STATIC,11,99,21,14,SS_CENTERIMAGE,WS_EX_RIGHT
+    LTEXT           "Min",IDC_STATIC,56,51,12,8
+    LTEXT           "Max",IDC_STATIC,109,51,14,8
+    EDITTEXT        IDC_EDIT_TRA_MAXX,95,63,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TRA_MINY,39,81,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TRA_MAXY,95,81,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TRA_MINZ,39,99,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TRA_MAXZ,95,99,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ROT_MINX,39,148,45,14,ES_AUTOHSCROLL
+    GROUPBOX        "Rotation (Degrees)",IDC_STATIC,7,126,248,80
+    LTEXT           "X",IDC_STATIC,11,148,21,14,SS_CENTERIMAGE,WS_EX_RIGHT
+    LTEXT           "Y",IDC_STATIC,11,165,21,14,SS_CENTERIMAGE,WS_EX_RIGHT
+    LTEXT           "Z",IDC_STATIC,11,183,21,14,SS_CENTERIMAGE,WS_EX_RIGHT
+    LTEXT           "Min",IDC_STATIC,56,135,12,8
+    LTEXT           "Max",IDC_STATIC,109,135,14,8
+    EDITTEXT        IDC_EDIT_ROT_MAXX,95,148,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ROT_MINY,39,165,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ROT_MAXY,95,165,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ROT_MINZ,39,183,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ROT_MAXZ,95,183,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SCA_MINX,39,231,45,14,ES_AUTOHSCROLL
+    GROUPBOX        "Scaling",IDC_STATIC,7,210,248,92
+    LTEXT           "X",IDC_STATIC,11,231,21,14,SS_CENTERIMAGE,WS_EX_RIGHT
+    LTEXT           "Y",IDC_STATIC,11,249,21,14,SS_CENTERIMAGE,WS_EX_RIGHT
+    LTEXT           "Z",IDC_STATIC,11,266,21,14,SS_CENTERIMAGE,WS_EX_RIGHT
+    LTEXT           "Min",IDC_STATIC,56,219,12,8
+    LTEXT           "Max",IDC_STATIC,109,219,14,8
+    EDITTEXT        IDC_EDIT_SCA_MAXX,95,231,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SCA_MINY,39,249,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SCA_MAXY,95,249,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SCA_MINZ,39,267,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SCA_MAXZ,95,267,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TRA_CENTER_X,149,63,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TRA_CENTRICITY_X,201,63,45,14,ES_AUTOHSCROLL
+    LTEXT           "Center",IDC_STATIC,161,51,23,8
+    LTEXT           "Centricity",IDC_STATIC,212,51,32,8
+    EDITTEXT        IDC_EDIT_TRA_CENTER_Y,149,81,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TRA_CENTRICITY_Y,201,81,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TRA_CENTER_Z,149,99,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TRA_CENTRICITY_Z,201,99,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ROT_CENTER_X,149,149,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ROT_CENTRICITY_X,201,149,45,14,ES_AUTOHSCROLL
+    LTEXT           "Center",IDC_STATIC,161,136,23,8
+    LTEXT           "Centricity",IDC_STATIC,212,136,32,8
+    EDITTEXT        IDC_EDIT_ROT_CENTER_Y,149,166,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ROT_CENTRICITY_Y,201,166,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ROT_CENTER_Z,149,184,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ROT_CENTRICITY_Z,201,184,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SCA_CENTER_X,149,231,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SCA_CENTRICITY_X,201,231,45,14,ES_AUTOHSCROLL
+    LTEXT           "Center",IDC_STATIC,161,219,23,8
+    LTEXT           "Centricity",IDC_STATIC,212,219,32,8
+    EDITTEXT        IDC_EDIT_SCA_CENTER_Y,149,249,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SCA_CENTRICITY_Y,201,249,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SCA_CENTER_Z,149,267,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SCA_CENTRICITY_Z,201,267,45,14,ES_AUTOHSCROLL
+    LTEXT           "Number of Copies:",IDC_STATIC,7,308,62,14,SS_CENTERIMAGE,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_NUMCOPIES,73,308,65,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "This dialog lets you create random copies of scenery.  By changing the centricity exponent from 1.0 (linear spread) you can make the property more likely to be close to the center (for example, 2.0 will give a square-root probability).",IDC_STATIC,7,7,248,35
+    CONTROL         "Keep x/y/z scaling the same",IDC_CHECK_UNITYSCALING,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,144,287,102,10
+    CONTROL         "Keep x/z scaling the same",IDC_CHECK_KEEPXZSCALINGSAME,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,287,102,10
+END
+
+IDD_EDITACTORTYPE DIALOGEX 0, 0, 442, 270
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Actor Type"
+MENU IDR_EDITACTORTYPE_MENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+2002 MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New Project...\tCtrl+N",     ID_NEW
+        MENUITEM "&Open Project...\tCtrl+O",    ID_OPEN
+        MENUITEM "Close",                       ID_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Save Project...\tCtrl+S",    ID_SAVE
+        MENUITEM "Save Project &As...",         ID_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "Create Resource Pack...",     ID_CREATERESOURCEPACK
+        MENUITEM SEPARATOR
+        MENUITEM "&Import...",                  ID_IMPORT
+        MENUITEM "Export...",                   ID_EXPORT
+        MENUITEM "Merge...",                    ID_MERGE
+        MENUITEM "&Compile...\tF5",             ID_COMPILE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "Introduction...",             6004
+        MENUITEM SEPARATOR
+        MENUITEM "&About...",                   6002
+    END
+END
+
+IDR_EDITACTORTYPE_MENU MENU 
+BEGIN
+    POPUP "Actor Type"
+    BEGIN
+        MENUITEM "Save && Exit",                ID_ACTORTYPE_SAVEANDEXIT
+        MENUITEM "Close without saving",        ID_ACTORTYPE_CLOSE
+    END
+    POPUP "Mesh"
+    BEGIN
+        MENUITEM "Rotate...",                   ID_MESH_ROTATE
+        MENUITEM "Scale...",                    ID_MESH_SCALE
+        POPUP "Flip Winding Order"
+        BEGIN
+            MENUITEM "Yes",                         ID_FLIPWINDINGORDER_YES
+            MENUITEM "No",                          ID_FLIPWINDINGORDER_NO
+        END
+        POPUP "Display Bones"
+        BEGIN
+            MENUITEM "Yes",                         ID_DISPLAYBONES_YES
+            MENUITEM "No",                          ID_DISPLAYBONES_NO
+        END
+    END
+    POPUP "Action Animations"
+    BEGIN
+        MENUITEM "Run Action Animation...",     ID_ACTIONANIMATIONS_RUNACTIONANIMATION
+        MENUITEM "Stop Action Animation",       ID_ACTIONANIMATIONS_STOPACTIONANIMATION
+        MENUITEM SEPARATOR
+        MENUITEM "Stop moving",                 ID_ACTIONANIMATIONS_STOPMOVING
+        MENUITEM "Turn in place slowly",        ID_ACTIONANIMATIONS_TURNINPLACESLOWLY
+        MENUITEM "Move in circle",              ID_ACTIONANIMATIONS_MOVEINCIRCLE
+        MENUITEM "Move back && forth",          ID_ACTIONANIMATIONS_MOVEBACKANDFORTH
+        POPUP "Set movement speed"
+        BEGIN
+            MENUITEM "Slowed (0.5)",                ID_SETMOVEMENTSPEED_SLOWED
+            MENUITEM "Normal (1.0)",                ID_SETMOVEMENTSPEED_NORMAL
+            MENUITEM "Faster (2.0)",                ID_SETMOVEMENTSPEED_FASTER
+            MENUITEM "Fastest (5.0)",               ID_SETMOVEMENTSPEED_FASTEST
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Set Animation Period...",     ID_ACTIONANIMATIONS_SETANIMATIONPERIOD
+        MENUITEM "Set Animation Speed Offset...", ID_ACTIONANIMATIONS_SETANIMATIONSPEEDOFFSET
+        MENUITEM "Set Animation Speed Factor...", ID_ACTIONANIMATIONS_SETANIMATIONSPEEDFACTOR
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_D3DWIDESCREENDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 371
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_ATLAS_TOOLBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 367
+    END
+
+    IDD_GENERATESCENERY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 322
+    END
+
+    IDD_EDITACTORTYPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 435
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 259
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP2             BITMAP                  "bitmap1.bmp"
+IDB_RED                 BITMAP                  "red.bmp"
+IDB_BLUE                BITMAP                  "blue.bmp"
+IDB_BLACK               BITMAP                  "black.bmp"
+IDB_GREEN               BITMAP                  "green.bmp"
+IDB_WHITE               BITMAP                  "white.bmp"
+IDB_DARKBLUE            BITMAP                  "darkblue.bmp"
+IDB_DARKRED             BITMAP                  "darkred.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "worldeditoricon.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
